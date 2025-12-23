@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Graph API Token Demo</title>
+  <link rel="stylesheet" href="facebook.css">
+</head>
+<body>
+   
+  <div class="header">
+    <div class="logo">
+        <p>Facebook Graph API</p>
+    </div>
+  </div>
+
+  <div class="main">
+
+    <div class="search-bar">
+      <input type="text" id="api-token" placeholder="Enter your API token"/>
+      <button id="fetch-btn" onclick="fetchInfo()">Fetch My Info</button>
+    </div>
+    
+    <div class="details">
+      <div class="user-info" id="user-info"></div>
+      <div class="posts" id="posts"></div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+      <div class="logo-footer">
+          <p>Facebook Graph API</p>
+      </div>
+      <div class="copyright-footer">
+          <p>©2025. Facebook Graph API. All Rights Reserve</p>
+      </div>
+  </div>
+
+</body>
+<script src="facebook.js"></script>
+</html>
