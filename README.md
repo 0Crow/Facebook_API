@@ -25,4 +25,6 @@ This small demo demonstrates how to call Facebook Graph API endpoints from a cli
 
 ## Notes
 
+- Get your Facebook Graph API token on `https://developers.facebook.com/` then put it on searchbar to view output.
 - Keep credentials and tokens private and out of version control.
+
