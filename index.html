@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Character encoding -->
   <meta charset="UTF-8">
+
+  <!-- Responsive layout for different screen sizes -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page title -->
   <title>Facebook Graph API Token Demo</title>
+
+  <!-- External CSS file -->
   <link rel="stylesheet" href="facebook.css">
 </head>
 <body>
-   
+
+  <!-- Header section -->
   <div class="header">
     <div class="logo">
+        <!-- App title -->
         <p>Facebook Graph API</p>
     </div>
   </div>
 
+  <!-- Main content area -->
   <div class="main">
 
+    <!-- Search bar / API token input -->
     <div class="search-bar">
+      <!-- Input field for Facebook API access token -->
       <input type="text" id="api-token" placeholder="Enter your API token"/>
+
+      <!-- Button to trigger API fetch -->
       <button id="fetch-btn" onclick="fetchInfo()">Fetch My Info</button>
     </div>
     
+    <!-- User details and posts section -->
     <div class="details">
+      <!-- User profile information will be injected here -->
       <div class="user-info" id="user-info"></div>
+
+      <!-- User posts will be injected here -->
       <div class="posts" id="posts"></div>
     </div>
 
   </div>
 
+  <!-- Footer section -->
   <div class="footer">
       <div class="logo-footer">
           <p>Facebook Graph API</p>
@@ -38,5 +57,7 @@
   </div>
 
 </body>
+
+<!-- External JavaScript file -->
 <script src="facebook.js"></script>
 </html>
