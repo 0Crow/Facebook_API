@@ -1,3 +1,4 @@
+/* Global page layout */
 body {
     font-family: Arial, sans-serif;
     display: grid;
@@ -13,14 +14,16 @@ body {
     margin: 0;
 }
 
+/* Header section */
 .header {
     grid-area: header;
     background-color: #7f9dff;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
 }
 
+/* Logo container */
 .logo {
     display: flex;
     flex-direction: row;
@@ -28,12 +31,14 @@ body {
     align-items: center;
 }
 
+/* Profile/logo image */
 .logo img {
    clip-path: circle(50%);
    width: 40px;
    height: 40px;
 }
 
+/* Logo text */
 .logo p {
     font-weight: 600;
     color: #ececec; 
@@ -41,6 +46,7 @@ body {
     padding: 0;
 }
 
+/* Main content */
 .main {
     grid-area: main;
     background-color: #F5F5F5;
@@ -48,11 +54,12 @@ body {
     flex-direction: column;
 }
 
+/* Search bar container */
 .search-bar {
-    height: fit-content;
     padding: 1rem;
 }
 
+/* API token input */
 .search-bar input {
     height: 30px;
     width: 40%;
@@ -61,6 +68,7 @@ body {
     outline: 1px solid #E0E0E0;
 }
 
+/* Fetch button */
 .search-bar button {
     height: 30px;
     border: none;
@@ -69,210 +77,59 @@ body {
     outline: 1px solid #E0E0E0;
 }
 
+/* Hover effect for button */
 .search-bar button:hover {
     background-color: #7f9dff;
     color: #F5F5F5;
 }
 
+/* Profile and posts layout */
 .details {
     display: grid;
-    grid-template-areas: 
-    "profile posts";
+    grid-template-areas: "profile posts";
     grid-template-columns: 400px 1fr;
     height: 100%;
 }
 
+/* User profile section */
 .user-info {
     grid-area: profile;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 5px;
-    background-color: #F5F5F5;
     padding: 0.5rem;
 }
 
+/* Profile image */
 .user-info img {
    width: 150px;
    height: 20vh;
    border-radius: 50%;
-   border: none;
    outline: 2px solid #E0E0E0;
 }
 
-.user-info p {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    text-align: start;
-    margin-top: 5px;
-}
-
-.user-info .name {
-  font-weight: 600;
-}
-
-.user-info .id {
-  font-weight: 600;
-  font-size: 12px;
-  color: #969696;
-}
-
-.user-info .location {
-  font-weight: 600;
-}
-
-.user-info .about {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
+/* Posts container */
 .posts {
     grid-area: posts;
-    height: 100%;
-    /* width: 100%; */
     max-height: 430px;
     overflow-y: scroll;
-    /* padding: 0 1rem 0 1rem; */
     display: flex;
     flex-direction: column;
     gap: 2px;
-    background-color: #F5F5F5;
-    box-sizing: border-box;
 }
 
-.posts .post-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-.posts .post-header p {
-  margin: 0;
-  padding: 0;
-}
-
+/* Individual post card */
 .posts .post-card {
-    height: fit-content;
-    width: 100%;
-    background-color: green;
     padding: 10px;
-    justify-content: center;
-    box-sizing: border-box;
     border-radius: 5px;
-    background-color: #F5F5F5;
     border: 2px solid #E0E0E0;
+    background-color: #F5F5F5;
 }
 
-.post-owner p {
-    margin: 0;
-    padding: 0;
-}
-
-.post-header h3 {
-    color: #67bbff;
-    font-size: 17px;
-}
-
-.post-header p {
-    font-weight: 600;
-    font-size: 15px;
-    color: #67bbff;
-}
-
-.post-header span {
-    font-weight: 600;
-    font-size: 12px;
-    color: #969696;
-}
-
-.post-card .post-owner {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
-
-.post-owner .email {
-    font-size: 15px;
-    font-weight: 700;
-}
-
-.post-owner .date {
-    font-size: 12px;
-    font-weight: 600;
-    color: #969696;
-}
-
-.post-content .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.post-content img {
-    height: 300px;
-    width: 300px;
-    border-radius: 5px;
-}
-
-.post-content p {
-  font-size: 15px;
-  font-weight: 500;
-}
-
-.post-content a {
-  font-size: 15px;
-  text-decoration: none;
-  font-weight: 500;
-  color: #409eeb;
-}
-
+/* Footer section */
 .footer {
     grid-area: footer;
     background-color: #7f9dff; 
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.logo-footer {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.logo-footer p {
-    font-weight: 600;
-    font-size: 12px;
-    color: #ececec;
-}
-
-.logo-footer img {
-   clip-path: circle(50%);
-   width: 30px;
-   height: 30px;
-}
-
-.copyright-footer {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding-right: 1rem;
-}
-
-.copyright-footer p {
-    font-weight: 600;
-    font-size: 12px;
-    color: #ececec;
 }
