@@ -20,11 +20,15 @@ This small demo demonstrates how to call Facebook Graph API endpoints from a cli
 
 ## How it works
 
+- The user must input their Graph API token from Facebook.
 - The demo reads configuration from the user input from `facebook.html`, attaches the access token to Graph API requests, and uses `fetch()` to call the Facebook Graph endpoints.
 - Results are rendered in the UI and logged to the console; for security and production use, a backend should handle tokens and API requests.
+- Once successful, The data such as profile and previous post are shown.
+  
 
 ## Notes
 
 - Get your Facebook Graph API token on `https://developers.facebook.com/` then put it on searchbar to view output.
 - Keep credentials and tokens private and out of version control.
+
 
